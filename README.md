@@ -18,6 +18,8 @@ We utilize the ViT-base-patch-16-224 attention-based model for image analysis. V
 ## Results
 
 Below are the results obtained so far using the ViT-base-patch-16-224 attention-based model:
+![image](https://github.com/user-attachments/assets/b7df5074-4835-4087-8a9a-6fcd2c565a38)
+
 
 ## Acknowledgements
 
