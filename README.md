@@ -4,7 +4,7 @@ This repository contains code, experiments, and results for a research project f
 
 ## Project Overview
 
-Lung cancer is one of the leading causes of cancer-related deaths worldwide. Early detection and accurate diagnosis are crucial for improving patient outcomes. In this project, we leverage state-of-the-art computer vision models, specifically attention-based architectures, to analyze medical imaging data for lung cancer research.
+Lung cancer is one of the leading causes of cancer-related deaths worldwide. Early detection and accurate diagnosis are crucial for improving patient outcomes. In this project, we leverage state-of-the-art vision transformer models, specifically attention-based architectures, to analyse medical imaging data for lung cancer research.
 
 ## Supervisor
 
@@ -13,7 +13,7 @@ Lung cancer is one of the leading causes of cancer-related deaths worldwide. Ear
 
 ## Methods
 
-We utilize the ViT-base-patch-16-224 attention-based model for image analysis. Vision Transformers (ViT) have shown promising results in various computer vision tasks, and we apply this architecture to our lung cancer dataset to evaluate its effectiveness.
+We utilise the ViT-base-patch-16-224 attention-based model for image analysis. Vision Transformers (ViT) have shown promising results in various computer vision tasks, and we apply this architecture to our lung cancer dataset to evaluate its effectiveness.
 
 ## Results
 
