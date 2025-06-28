@@ -20,7 +20,7 @@ We utilise the ViT-base-patch-16-224 attention-based model for image analysis. V
 Classification report obtained so far using the ViT-base-patch-16-224 attention-based model:
 ![image](https://github.com/user-attachments/assets/5581bf9c-5d57-4026-bba6-cdd248e768d7)
 
-
+Highest current accuracy achieved till now: 99.14%
 
 ## Acknowledgements
 
