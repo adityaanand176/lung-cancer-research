@@ -1,4 +1,4 @@
-# Lungs Cancer Research
+# Lung Cancer Research
 
 This repository contains code, experiments, and results for a research project focused on lung cancer detection and analysis using deep learning techniques. The project is being conducted under the guidance of [Pawan Kumar Singh](https://scholar.google.co.in/citations?user=LctgJHoAAAAJ&hl=en).
 
