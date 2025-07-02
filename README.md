@@ -60,6 +60,8 @@ Highest current accuracy achieved using ViT: **99.14%**
 
 ### DeiT-based Results
 Classification report obtained using the DeiT-based model:
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/f3a95fef-0bd7-4ff5-8681-a237f134e399" />
+
 
 ## Acknowledgements
 
