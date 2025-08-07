@@ -13,60 +13,57 @@ Lung cancer is one of the leading causes of cancer-related deaths worldwide. Ear
 
 ## Methods
 
-We utilise the **ViT-base-patch-16-224** attention-based model for image analysis. Vision Transformers (ViT) have shown promising results in various computer vision tasks, and we apply this architecture to our lung cancer dataset to evaluate its effectiveness.
-
-In addition, we now experiment with **ResNet-18**, a convolutional neural network architecture, to compare and benchmark traditional CNN-based models against transformers for medical imaging.
+We utilise the **facebook/deit-base-distilled-patch16-224** attention-based model for image analysis. Vision Transformers (ViT) have shown promising results in various computer vision tasks, and we apply this architecture to our lung cancer dataset to evaluate its effectiveness.
 
 ### Key Techniques Used
 
 - **Image Preprocessing Pipeline**:
   - CLAHE (Contrast Limited Adaptive Histogram Equalization)
-  - Bicubic Interpolation (Resizing to 224x224)
+  - Bicubic Interpolation (Resizing to 224×224)
   - Gaussian Blurring
-  - Otsu Thresholding
-  - Erosion and Dilation
-  - Normalization (using `AutoImageProcessor` stats for DeiT)
+  - Otsu's Thresholding
+  - Morphological Transformations (Erosion + Dilation)
+  - Grayscale Normalization using `AutoImageProcessor` from HuggingFace
 
 - **Model Architectures**:
-  - Vision Transformer (DeiT Base Distilled Patch16)
-  - ResNet-18 with modified classification head
+  - [`facebook/deit-base-distilled-patch16-224`](https://huggingface.co/facebook/deit-base-distilled-patch16-224)
 
 - **Training Enhancements**:
   - Stratified 5-Fold Cross-Validation
-  - Class Weighting for Imbalanced Data
   - Learning Rate Scheduling (`CosineAnnealingLR`)
   - Early Stopping with Patience Tracking
+  - Reduce LROnPlateau
   - Label Smoothing Regularization
   - DataLoader with multiprocessing (`num_workers`, `pin_memory`)
 
 - **Optimizers Used**:
-  - `AdamW` for DeiT and ResNet
+  - AdamW
 
 - **Metrics**:
   - Accuracy
   - Classification Report
+  - ROC Curve and AUC (per class)
   - Confusion Matrix
 
-## Results
+## Data Efficient Image Transformer(DeiT) Results
 
-### ViT-base-patch-16-224 based Results
-
-Classification report obtained using the ViT-base-patch-16-224 attention-based model:
-
-![image](https://github.com/user-attachments/assets/5581bf9c-5d57-4026-bba6-cdd248e768d7)
-
-
-Highest current accuracy achieved using ViT: **99.14%**
-
-### DeiT-based Results
+### iQOTH-NCCD Dataset
 Classification report obtained using the DeiT-based model:
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/f3a95fef-0bd7-4ff5-8681-a237f134e399" />
+
+Highest current accuracy achieved using ViT: **99.54%**
+
+### LIDC-IDRI Dataset
+
+Classification report obtained using the DeiT-based model:
+
+Confusion Matrix obtained using the DeiT-based model:
+
 
 
 ## Acknowledgements
 
 - This research is conducted under the supervision of Dr. Pawan Kumar Singh.
-- Thanks to all contributors and collaborators.
 
 ## License
 
