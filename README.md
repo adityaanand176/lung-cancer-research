@@ -1,6 +1,6 @@
 # Lung Cancer Research
 
-This repository contains code, experiments, and results for a research project focused on lung cancer detection and analysis using deep learning techniques. The project is being conducted under the guidance of [Pawan Kumar Singh](https://scholar.google.co.in/citations?user=LctgJHoAAAAJ&hl=en).
+This repository contains code, experiments, and results for a research project focused on lung cancer detection and analysis using deep learning techniques. The project is being conducted under the guidance of [Dr. Pawan Kumar Singh](https://scholar.google.co.in/citations?user=LctgJHoAAAAJ&hl=en).
 
 ## Project Overview
 
@@ -70,8 +70,15 @@ Highest current accuracy achieved using DeiT: **95.64%**
 
 ## Acknowledgements
 
-- This research is conducted under the supervision of Dr. Pawan Kumar Singh.
+- This research is conducted under the supervision of **Dr. Pawan Kumar Singh.**
+- Special thanks to the contributors and maintainers of the Hugging Face Transformers library for providing the pre-trained models and tools that facilitated this research.
+
+## Team Members
+- **Dr. Pawan Kumar Singh** (Supervisor)
+- **Yash Raj Singh** - Jadavpur University (Researcher)
+- **Ishant Sarthak Singh** - Jadavpur University (Researcher)
+- **Aditya Anand** - Jadavpur University (Researcher)
 
 ## License
+This project is for research and educational purposes only. 
 
-This project is for academic and research purposes only.
